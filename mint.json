@@ -1,15 +1,15 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "SlyceIO",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "https://slyce-io.co.uk/wp-content/uploads/2024/03/slyce-io-logo-white-blue.png",
+    "light": "https://slyce-io.co.uk/wp-content/uploads/2024/03/slyce-io-logo-dark-blue-e1709307010444.png"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#0076c5",
+    "light": "#0076c5",
+    "dark": "#0076c5",
     "anchors": {
       "from": "#0D9373",
       "to": "#07C983"
@@ -18,12 +18,12 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:support@slyce-io.co.uk"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Log in / Sign up",
+    "url": "https://slyce-io-webui-prod.azurewebsites.net/account/login"
   },
   "tabs": [
     {
@@ -35,17 +35,14 @@
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "https://siraxis.mintlify.app/introduction",
+      "color": "#0076c5"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "Website",
+      "icon": "globe",
+      "url": "https://slyce-io.co.uk",
+      "color": "#0076c5"
     }
   ],
   "navigation": [
@@ -84,8 +81,5 @@
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
   }
 }
