@@ -1,0 +1,4 @@
+---
+title: 'Get Documents'
+openapi: 'GET /container-definitions/{container-definition-id}/documents/{document-id}'
+---
