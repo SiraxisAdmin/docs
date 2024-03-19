@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "SlyceIO",
   "logo": {
-    "dark": "logo/slyce-io-logo-white-blue.png",
-    "light": "logo/slyce-io-logo-dark-blue.png"
+    "dark": "/logo/slyce-io-logo-white-blue.png",
+    "light": "/logo/slyce-io-logo-dark-blue.png"
   },
   "favicon": "/SlyceIOfavicon.png",
   "colors": {
