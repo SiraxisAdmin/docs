@@ -22,7 +22,12 @@ There are two ways to build API documentation: [OpenAPI](https://mintlify.com/do
 
 ## Authentication
 
-In order to access the document API endpoints you must first create an API key within the SlyceIO UI. This is then used via the authentication endpoint to retrieve a time dependant encrypted bearer token.
+In order to access the document endpoints you must:
+<ul>
+<li>Create an API key within the SlyceIO UI</li> 
+<li>Retrieve a time dependant encrypted bearer token via the <b>authentication endpoint</b></li> 
+</ul>
+
 
 ```json
 "security": [
@@ -33,7 +38,7 @@ In order to access the document API endpoints you must first create an API key w
 ```
 
 <Note>
-Bearer token security is used for all <b>document</b> API endpoints.
+Bearer token security is used for all <b>Document Endpoints</b>.
 </Note>
 ```json
 "security": [
