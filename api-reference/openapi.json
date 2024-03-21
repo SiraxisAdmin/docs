@@ -254,17 +254,13 @@
             "in": "query",
             "description": "URL encoded JSON array that details the partition key/s for the specified document in the container definition",
             "required": true,
-            "content": {
-              "application/json": {
-                "schema": {
+            "schema": {
                   "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/PartitionKey"
                   }
 
                 }
-              }
-            }
           }
         ],
         "responses": {
