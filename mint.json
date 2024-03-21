@@ -75,10 +75,15 @@
     {
       "group": "Endpoint Examples",
       "pages": [
-        "api-reference/endpoint/create"
+        "api-reference/endpoint/create",
+        "api-reference/endpoint/get",
+        "api-reference/endpoint/update"
       ]
     }
   ],
   "footerSocials": {
-  }
+    "twitter": "https://twitter.com/slyceio",
+    "linkedin": "https://www.linkedin.com/company/slyceio"
+  },
+  "openapi": "/api-reference/openapi.json"
 }
