@@ -73,11 +73,18 @@
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Authentication",
+      "pages": [
+        "api-reference/endpoint/authentication"
+      ]
+    },
+    {
+      "group": "Document Endpoints",
       "pages": [
         "api-reference/endpoint/create",
         "api-reference/endpoint/get",
-        "api-reference/endpoint/update"
+        "api-reference/endpoint/update",
+        "api-reference/endpoint/delete"
       ]
     }
   ],

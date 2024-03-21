@@ -1,4 +1,0 @@
----
-title: 'Delete Document'
-openapi: 'DELETE /container-definitions/{container-definition-id}/documents/{document-id}'
----

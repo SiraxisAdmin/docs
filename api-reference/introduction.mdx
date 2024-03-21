@@ -13,7 +13,7 @@ description: 'Example section for showcasing API endpoints'
 There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
 
 <Card
-  title="Plant Store Endpoints"
+  title="SlyceIO API Endpoints"
   icon="leaf"
   href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
 >
@@ -22,12 +22,23 @@ There are two ways to build API documentation: [OpenAPI](https://mintlify.com/do
 
 ## Authentication
 
-All API endpoints are authenticated using encrypted Bearer tokens and picked up from the specification file.
+In order to access the document API endpoints you must first create an API key within the SlyceIO UI. This is then used via the authentication endpoint to retrieve a time dependant encrypted bearer token.
 
 ```json
 "security": [
   {
-    "bearerAuthasdad": ["testtoken"]
+    "ApiKeyAuth": []
+  }
+]
+```
+
+<Note>
+Bearer token security is used for all <b>document</b> API endpoints.
+</Note>
+```json
+"security": [
+  {
+    "BearerAuth": []
   }
 ]
 ```
