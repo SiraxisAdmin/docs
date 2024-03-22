@@ -1,0 +1,310 @@
+{
+  "info": {
+    "name": "SlyceIO Postman Template",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Token",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "SlyceIO-Api-Key",
+            "value": "Your API key here",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://authapi.slyce-io.co.uk/auth-token",
+          "host": [
+            "https://authapi.slyce-io.co.uk"
+          ],
+          "path": [
+            "auth-token"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Document",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "SlyceIO-Api-Correlation-ID",
+            "value": "",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.slyce-io.co.uk/container-definitions/:containerDefinitionId/documents",
+          "host": [
+            "https://api.slyce-io.co.uk"
+          ],
+          "path": [
+            "container-definitions",
+            ":containerDefinitionId",
+            "documents"
+          ],
+          "variable": [
+            {
+              "key": "containerDefinitionId",
+              "value": null
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Document",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "SlyceIO-Api-Correlation-ID",
+            "value": "",
+            "type": "text"
+          },
+          {
+            "key": "SlyceIO-Api-ETag",
+            "value": "*",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.slyce-io.co.uk/container-definitions/:containerDefinitionId/documents/:documentId",
+          "host": [
+            "https://api.slyce-io.co.uk"
+          ],
+          "path": [
+            "container-definitions",
+            ":containerDefinitionId",
+            "documents",
+            ":documentId"
+          ],
+          "variable": [
+            {
+              "key": "containerDefinitionId",
+              "value": null
+            },
+            {
+              "key": "documentId",
+              "value": null
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Document",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "SlyceIO-Api-Correlation-ID",
+            "value": "",
+            "type": "text"
+          },
+          {
+            "key": "SlyceIO-Api-ETag",
+            "value": "*",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api.slyce-io.co.uk/container-definitions/:containerDefinitionId/documents/:documentId?partitionKeys=[{\"Name\": \"/SimplePartition\", \"Type\": \"YourPartitionKeyType\", \"Value\": \"YourPartitionKeyValue\"}]",
+          "host": [
+            "https://api.slyce-io.co.uk"
+          ],
+          "path": [
+            "container-definitions",
+            ":containerDefinitionId",
+            "documents",
+            ":documentId"
+          ],
+          "variable": [
+            {
+              "key": "containerDefinitionId",
+              "value": null
+            },
+            {
+              "key": "documentId",
+              "value": null
+            }
+          ],
+          "query": [
+            {
+              "key": "partitionKeys",
+              "value": "[{\"Name\": \"/SimplePartition\", \"Type\": \"YourPartitionKeyType\", \"Value\": \"YourPartitionKeyValue\"}]"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Document",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "SlyceIO-Api-Correlation-ID",
+            "value": "",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api.slyce-io.co.uk/container-definitions/:containerDefinitionId/documents/:documentId?partitionKeys=[{\"Name\": \"/SimplePartition\", \"Type\": \"YourPartitionKeyType\", \"Value\": \"YourPartitionKeyValue\"}]",
+          "host": [
+            "https://api.slyce-io.co.uk"
+          ],
+          "path": [
+            "container-definitions",
+            ":containerDefinitionId",
+            "documents",
+            ":documentId"
+          ],
+          "variable": [
+            {
+              "key": "containerDefinitionId",
+              "value": null
+            },
+            {
+              "key": "documentId",
+              "value": null
+            }
+          ],
+          "query": [
+            {
+              "key": "partitionKeys",
+              "value": "[{\"Name\": \"/SimplePartition\", \"Type\": \"YourPartitionKeyType\", \"Value\": \"YourPartitionKeyValue\"}]"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Query Documents",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "SlyceIO-Api-Correlation-ID",
+            "value": "",
+            "type": "text"
+          },
+          {
+            "key": "SlyceIO-Api-Continuation-Token",
+            "value": "",
+            "type": "text"
+          },
+          {
+            "key": "SlyceIO-Api-Max-Records",
+            "value": "0",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"QueryDefinitionId\": \"Your QueryDefinitionId\",\r\n  \"Parameters\": [\r\n    {\r\n      \"Name\": \"Your QueryParameter1 Name\",\r\n      \"Value\": \"Your QueryParameter1 Value\"\r\n    },\r\n    {\r\n      \"Name\": \"Your QueryParameter2 Name\",\r\n      \"Value\": \"Your QueryParameter2 Value\"\r\n    }\r\n  ]\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.slyce-io.co.uk/container-definitions/:containerDefinitionId/documents/query",
+          "host": [
+            "https://api.slyce-io.co.uk"
+          ],
+          "path": [
+            "container-definitions",
+            ":containerDefinitionId",
+            "documents",
+            "query"
+          ],
+          "variable": [
+            {
+              "key": "containerDefinitionId",
+              "value": null
+            },
+            {
+              "key": "documentId",
+              "value": null
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "Your Bearer Token here",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}

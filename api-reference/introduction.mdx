@@ -1,50 +1,45 @@
 ---
 title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+description: 'Container data access using the API endpoints'
 ---
-
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
 
 ## Welcome
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+Container data is accessed via the gateway using a RESTful interface. 
 
+Once your container definitions and API keys have been set up, they can then be accessed using the required endpoints detailed in the API reference. 
+
+<Info>
+SlyceIO is OpenAPI compliant and readily accessible using the Postman project template
+</Info>
+
+<CardGroup cols={2}>
 <Card
   title="SlyceIO API Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
+  icon="circle-nodes"
+  href="/api-reference/openapispecification"
 >
-  View the OpenAPI specification file
+  View the OpenAPI specification
 </Card>
+<Card
+  title="Postman"
+  icon="file-code"
+  href="/api-reference/postmantemplate"
+>
+  View the Postman project template
 
-## Authentication
+</Card>
+</CardGroup>
+
+## Getting Started
 
 In order to access your container data you must:
-<ul>
-<li>Create an API key within the SlyceIO UI for the required container definition</li> 
-<li>Use the API key to retrieve a time dependant encrypted bearer token via the <b>authentication endpoint</b></li> 
-<li>Add the bearer token to the authorization header for any of the <b>document endpoints</b> you wish to use</li> 
-</ul>
 
-
-```json
-"security": [
-  {
-    "ApiKeyAuth": []
-  }
-]
-```
+- Create an API key within the SlyceIO UI for the required container definition 
+- Use the API key to retrieve an encrypted bearer token via the [authentication token endpoint](/api-reference/endpoint/authentication)
+- Add the bearer token to the authorization header for any of the [document endpoints](/api-reference/endpoint/create) you wish to use
 
 <Note>
 Bearer token security is used for all <b>Document Endpoints</b>.
 </Note>
-```json
-"security": [
-  {
-    "BearerAuth": []
-  }
-]
-```
+

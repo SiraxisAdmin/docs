@@ -35,7 +35,7 @@
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://docs.slyce-io.co.uk/introduction",
+      "url": "introduction",
       "color": "#0076c5"
     },
     {
@@ -47,7 +47,7 @@
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Overview",
       "pages": [
         "introduction",
         "quickstart",
@@ -73,6 +73,7 @@
       ]
     },
     {
+
       "group": "Authentication Endpoint",
       "pages": [
         "api-reference/endpoint/authentication"
@@ -84,7 +85,8 @@
         "api-reference/endpoint/create",
         "api-reference/endpoint/get",
         "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
+        "api-reference/endpoint/delete",
+        "api-reference/endpoint/query"
       ]
     }
   ],
