@@ -1,6 +1,6 @@
 ---
 title: 'Connections'
-description: 'Allow access to your Azure Cosmos DB accounts'
+description: 'Manage access to your Azure Cosmos DB accounts'
 icon: 'plug'
 ---
 
@@ -9,24 +9,31 @@ icon: 'plug'
   src="/images/Connections.png"
 />
 
-## Using Connections
+## Overview
 
-Creating a connection is your starting point and defines the **account endpoint and key** that can be used for managing container definitions and optional query definitions.
+Creating a connection is your starting point and defines the **Azure Cosmos DB account endpoint and key** that is used for managing container definitions and associated query definitions within SlyceIO.
 
-<Tip>
-**READ/WRITE** keys are required for inserting, updating, or deleting container data.
-</Tip>
-<Tip>
-**READONLY** keys are sufficient if you just want to read container data.
-</Tip>
 <Note>
-**ACCOUNT ENDPOINTS** must be publicly accessible from within Azure.
+<b>Read/Write</b> Azure Cosmos DB account keys are required for <b>inserting, updating, deleting or querying</b> container data.
+</Note>
+<Note>
+<b>Readonly</b> Azure Cosmos DB account keys are sufficient if you just want to <b>query</b> container data.
+</Note>
+<Note>
+Azure Cosmos DB account endpoints must be <b>publicly</b> accessible.
 </Note>
 
 ## Context Menu
-Once created, you can use the context menu to edit, delete or test connections.
+You can use the context menu to **edit**, **delete** or **test** your existing connections.
 
 <img
   style={{ borderRadius: '0.5rem' }}
   src="/images/ConnectionsContextMenu.png"
 />
+
+<Warning>
+Connection endpoints cannot be <b>changed</b>.
+</Warning>
+<Warning>
+Connections cannot be <b>deleted</b> when associated with one or more container definitions.
+</Warning>

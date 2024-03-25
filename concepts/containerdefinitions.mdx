@@ -1,6 +1,6 @@
 ---
 title: 'Container Definitions'
-description: 'Manage container and query defintions'
+description: 'Manage container and query definitions'
 icon: 'table'
 ---
 
@@ -9,14 +9,29 @@ icon: 'table'
   src="/images/ContainerDefinitions.png"
 />
 
-## Using Container Definitions
+## Overview
 
-Container Definitions allow you to store container metadata for the required connection and database, with the option to add a **JSON schema** to ensure data integrity when inserting or updating data for the specified container.
+Container definitions allow you to store container metadata for the required connection and database, 
+with the option to add a **JSON schema** to ensure data integrity when inserting or updating data for the specified container.
+
+The system will use the chosen **connection** to determine any available **databases** and associated **containers**. Simply select the required container, add your JSON schema (optional) and save the definition.
+
+<Tip>
+[Learn more](https://json-schema.org/) about JSON schemas.
+</Tip>
+
 
 ## Context Menu
-Once created you can use the context menu to edit or delete existing container definitions, manage [query definitions](/concepts/querydefinitions), view the container API specification or any associated API keys.
+You can use the context menu to **edit** or **delete** existing container definitions, manage [query definitions](/concepts/querydefinitions), examine the container API specification or view associated API keys.
 
 <img
   style={{ borderRadius: '0.5rem' }}
   src="/images/ContainerDefinitionsContextMenu.png"
 />
+
+<Warning>
+Container definition connections, databases, and containers cannot be <b>changed</b>.
+</Warning>
+<Warning>
+Container definitions cannot be <b>deleted</b> when associated with one or more API keys.
+</Warning>
