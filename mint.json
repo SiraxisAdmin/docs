@@ -56,6 +56,15 @@
       ]
     },
     {
+      "group": "Concepts",
+      "pages": [
+        "concepts/connections",
+        "concepts/containerdefinitions",
+        "concepts/querydefinitions",
+        "concepts/apikeys"
+      ]
+    },
+    {
       "group": "Essentials",
       "pages": [
         "essentials/markdown",

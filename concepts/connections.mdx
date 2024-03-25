@@ -1,0 +1,32 @@
+---
+title: 'Connections'
+description: 'Allow access to your Azure Cosmos DB accounts'
+icon: 'plug'
+---
+
+<img
+  style={{ borderRadius: '0.5rem' }}
+  src="/images/Connections.png"
+/>
+
+## Using Connections
+
+Creating a connection is your starting point and defines the **account endpoint and key** that can be used for managing container definitions and optional query definitions.
+
+<Tip>
+**READ/WRITE** keys are required for inserting, updating, or deleting container data.
+</Tip>
+<Tip>
+**READONLY** keys are sufficient if you just want to read container data.
+</Tip>
+<Note>
+**ACCOUNT ENDPOINTS** must be publicly accessible from within Azure.
+</Note>
+
+## Context Menu
+Once created, you can use the context menu to edit, delete or test connections.
+
+<img
+  style={{ borderRadius: '0.5rem' }}
+  src="/images/ConnectionsContextMenu.png"
+/>

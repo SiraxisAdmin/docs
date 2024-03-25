@@ -1,0 +1,35 @@
+---
+title: 'Query Definitions'
+description: 'Create, edit, delete and test query definitions'
+icon: 'code'
+---
+
+<img
+  style={{ borderRadius: '0.5rem' }}
+  src="/images/QueryDefinitions.png"
+/>
+
+## Using Query Definitions
+
+Query Definitions allow you to define multiple queries for the selected container definition using Azure Cosmos DB SQL. 
+
+Static and parameterized queries are both available.
+```
+ select * from c 
+ where c.id = @{{MyIdParameter}} 
+ and c.category = '@{{MyCategoryParameter}}'
+ and c.version = 1`
+```
+
+<Tip>
+Queries can be tested to ensure their function is correct before being made available through the API.
+</Tip>
+
+## Context Menu
+Once created you can use the context menu to view, edit or delete existing query definitions. 
+
+
+<img
+  style={{ borderRadius: '0.5rem' }}
+  src="/images/QueryDefinitionsContextMenu.png"
+/>
