@@ -50,9 +50,7 @@
       "group": "Overview",
       "pages": [
         "introduction",
-        "quickstart",
-        "howitworks",
-        "development"
+        "quickstart"
       ]
     },
     {
@@ -63,18 +61,7 @@
         "concepts/querydefinitions",
         "concepts/apikeys"
       ]
-    },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
+    },  
     {
       "group": "API Documentation",
       "pages": [
@@ -82,7 +69,6 @@
       ]
     },
     {
-
       "group": "Authentication Endpoint",
       "pages": [
         "api-reference/endpoint/authentication"

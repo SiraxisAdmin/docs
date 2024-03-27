@@ -1,41 +1,46 @@
 ---
 title: Introduction
-description: '**SlyceIO** is a data gateway for **Azure Cosmos DB** providing a single point of management for safe external access to your container data with fine grained security, querying and data validation.'
+description: '**SlyceIO** is a data gateway for **Azure Cosmos DB** providing a single point of management for safe external access to your **container data** with fine grained security, querying and data validation.'
 ---
 
 ## Explore
 
-Discover the features and how SlyceIO works.
+Discover the main concepts and workflow behind SlyceIO.
 
-<CardGroup cols={2}>
+<CardGroup cols={1}>
   <Card
-    title="Features"
-    icon="list-check"
-    href="https://mintlify.com/docs/quickstart"
+    title="Connections"
+    icon="plug"
+    href="/concepts/connections"
   >
-    Learn more about what SlyceIO can do for you
+    Learn how SlyceIO connects to your Azure Cosmos DB accounts
   </Card>
   <Card
-    title="How it works"
-    icon="gears"
-    href="/howitworks"
+    title="Container Definitions"
+    icon="table"
+    href="/concepts/containerdefinitions"
   >
-    Learn how SlyceIO is configured and accessed by your users
+    Learn how SlyceIO manages containers
+  </Card>
+    <Card
+    title="Query Definitions"
+    icon="code"
+    href="/concepts/querydefinitions"
+  >
+    Learn more about querying in SlyceIO
+  </Card>
+  <Card
+    title="API Keys"
+    icon="key"
+    href="/concepts/apikeys"
+  >
+    Learn about security in SlyceIO
+  </Card>
+    <Card
+    title="Data Gateway"
+    icon="square-code"
+    href="/api-reference/introduction"
+  >
+    Learn how to use the data gateway with the API Reference
   </Card>
 </CardGroup>
-
-## Quickstart
-
-Learn how to start accessing your Azure Cosmos DB container data in less than 5 minutes.
-
-<Steps>
-  <Step title="Create an account">
-    Creating an account only requires a valid email address. A time dependant security code will be sent to your email address which can then be used to log in to the UI.
-  </Step>
-  <Step title="Set up your containers in the UI">    
-    Create connections, container definitions, and query definitions. Secure container definition access with API keys.
-  </Step>
-  <Step title="Access your data">
-    Container data is accessed using the SlyceIO data gateway. The [API Reference](/api-reference/introduction) contains a comprehensive set of instructions and interactive code for communicating with the gateway.
-  </Step>
-</Steps>
