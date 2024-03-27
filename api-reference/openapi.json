@@ -24,7 +24,7 @@
         "description": "Creates an encrypted bearer token for a specified API key",
         "servers": [
           {
-            "url": "https://devauthapi.slyce-io.co.uk"
+            "url": "https://authapi.slyce-io.co.uk"
           }
         ],
         "security": [
