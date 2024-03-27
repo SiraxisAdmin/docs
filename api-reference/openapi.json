@@ -237,7 +237,7 @@
           {
             "name": "documentId",
             "in": "path",
-            "description": "ID of the document to update",
+            "description": "ID of the document to delete",
             "required": true,
             "schema": {
               "type": "string",
