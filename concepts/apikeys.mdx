@@ -11,13 +11,33 @@ icon: 'key'
 
 ## Overview
 
-An API key details the exchange start and end date, access token duration, container permissions and the physical key that is used for authentication. 
+An API key details the exchange information, access token duration, container permissions and the physical key that is used for authentication. 
 
 Use the [authentication token endpoint](/api-reference/endpoint/authentication) to issue an encrypted bearer token for the required API key. This can then be used to access container data via the [document endpoints](/api-reference/endpoint/create).
 
 <Tip>
 <b>API key exchange</b> allows you to easily schedule access - you don't need to worry about issuing keys at that exact moment and time.
 </Tip>
+
+## API Key Fields
+<Steps>
+  <Step title="API Key">
+	The physical key that is exchanged for an encrypted bearer token.
+  </Step>
+  <Step title="API Key Exchange Allowed">
+	When checked, the API key can be exchanged for a token, otherwise exchange is denied.
+  </Step>
+  <Step title="API Key Exchange Allowed From/To (UTC)">
+    The API key can only be exchanged within these dates, any attempt to exchange an API key outside of these dates will be refused.
+  </Step>
+  <Step title="Access Token Duration">
+    This defines the token lifetime in minutes. Once the token has expired then the API key will need to be exchanged for a new token. For increased security we recommend the duration is kept as small as possible to prevent misuse.
+  </Step>
+  <Step title="Permissions">
+   Permissions allows you to secure one or more container definitions against one or more CRUD or query operations for a specific API key. Any attempt to access a container definition without the necessary permissions will result in an unauthorized response.
+  </Step>
+</Steps>
+
 
 ## Context Menu
 You can use the context menu to **edit** or **delete** existing API keys or **assign** container permissions. 
