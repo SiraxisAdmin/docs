@@ -4,10 +4,10 @@ description: 'Project template used to access your container data via Postman'
 ---
 
 <Info>
-  Copy the following JSON into Postman to access your container data.
-  - Obtain a bearer token from the authentication token endpoint, using the required API key in the `SlyceIO-Api-Key` header.
-  - Replace the `containerDefinitionId` and `documentId` variables with the required values.
-  - Ensure any `partitionKeys` query parameter values are **url encoded**.
+  - Copy the JSON template into Postman.
+  - Obtain a bearer token from the authentication token endpoint by using the relevant API key in the `SlyceIO-Api-Key` header.
+  - Replace the `containerDefinitionId` and `documentId` path variables with the required values.
+  - Ensure all `partitionKeys` query parameter values are **url encoded**.
 </Info>
 
 ```json SlyceIO Postman template
@@ -18,25 +18,10 @@ description: 'Project template used to access your container data via Postman'
   },
   "item": [
     {
-      "name": "Token",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "exec": [
-              ""
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
+      "name": "Authentication Token",
       "request": {
         "method": "POST",
         "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/x-www-form-urlencoded"
-          },
           {
             "key": "SlyceIO-Api-Key",
             "value": "Your API key here",
