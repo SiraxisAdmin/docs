@@ -69,9 +69,9 @@
       ]
     },
     {
-      "group": "Authentication Endpoint",
+      "group": "Authorization Endpoint",
       "pages": [
-        "api-reference/endpoint/authentication"
+        "api-reference/endpoint/authorization"
       ]
     },
     {
